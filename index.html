@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BotPizza</title>
 </head>
+
 <body>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .informacion {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+    <div class="container">
+        <div class="informacion">
+            <div class="col-md-12">
+                <h1>Chat BotPizza</h1>
+                <p>Alumno: Hector Guerra <br>
+                    Sumativa: 3 <br>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="BotPizza"
-  agent-id="41e90876-9fc9-4c4a-afd4-64c300820da1"
-  language-code="es"
-></df-messenger>
+    <df-messenger intent="WELCOME" chat-title="BotPizza" agent-id="41e90876-9fc9-4c4a-afd4-64c300820da1"
+        language-code="es"></df-messenger>
 </body>
+
 </html>
